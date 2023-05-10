@@ -474,10 +474,19 @@ nav ul li {
     margin: 50px;
     margin-bottom: 25px;
 }
-
 .habilidad img:hover {
     transform: translateY(-5%);
     transition: all .5s ease;
+}
+
+#numTel:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+#sendEmail:hover{
+    color: blue;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1500px) {

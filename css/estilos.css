@@ -331,12 +331,12 @@ footer {
 }
 
 #profile {
-    border-radius: 500px;
     width: 400px;
     height: 400px;
     padding: 0;
     margin: 20px;
-
+    max-width: 500px;
+    max-height: 500px;
 }
 
 .cardAbout:hover {
@@ -503,7 +503,7 @@ nav ul li {
     height: 1px;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1000px) {
 
     header ul {
         /* flex-direction: column;

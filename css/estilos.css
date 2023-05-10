@@ -89,11 +89,6 @@ hr {
     margin-bottom: 15em;
 }
 
-#profile:hover {
-    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.6);
-    transition: .7s ease;
-}
-
 section {
     height: auto;
 }
@@ -337,10 +332,8 @@ footer {
 
 #profile {
     border-radius: 500px;
-    border: solid #0b0858;
     width: 400px;
     height: 400px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
     padding: 0;
     margin: 20px;
 

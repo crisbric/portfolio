@@ -504,9 +504,6 @@ nav ul li {
     cursor: pointer;
 }
 
-
-
-
 @media only screen and (max-width: 1500px) {
 
     header ul {
@@ -690,6 +687,7 @@ nav ul li {
     }
 
     #scroll-to-top, #scroll-to-bottom{
+        display: none;
         position: fixed;
         bottom: 50px;
         right: 10px;
@@ -699,7 +697,7 @@ nav ul li {
         border-radius: 50px;
         cursor: pointer;
       }
-/* 
+    /* 
       #scroll-to-top span, #scroll-to-bottom span{
         font-size: x-small;
       } */

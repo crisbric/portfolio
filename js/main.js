@@ -89,19 +89,15 @@ puntoEdu.forEach((cadaPunto, i) => {
 
 // Marcado de numero de telefono ------------------------------------------
 
-const numTel = document.getElementById("numTel");
-
-numTel.addEventListener("click", () => {
-  window.location.href = "tel:+" + numTel.textContent;
-});
+function llamar() {
+  window.open('tel:+34641820009');
+}
 
 // Envio de correo electronico ------------------------------------------
 
-const sendEmail = document.getElementById("sendEmail");
-
-sendEmail.addEventListener("click", () => {
-  window.location.href = "mailto:" + sendEmail.textContent;
-});
+function enviarCorreo() {
+  window.open('mailto:cristopherabm@gmail.com');
+}
 
 // Enviar whatsapp ------------------------------------------------------
 
@@ -115,30 +111,31 @@ function enviarWhatsapp() {
 
 // Funciones para subir o bajar en la pantalla ---------------------------
 
-//Funcion para desplazar hacia arriba
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
 // Funcion para detectar que la pagina ha sido desplazada
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("scroll-to-top").style.display = "block";
-    document.getElementById("scroll-to-bottom").style.display = "none"
-  } else {
-    document.getElementById("scroll-to-top").style.display = "none";
-    document.getElementById("scroll-to-bottom").style.display = "block";
-  }
+    if (window.screen.width <= 1500 || document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scroll-to-top").style.display = "block";
+      document.getElementById("scroll-to-bottom").style.display = "none"
+    } else {
+      document.getElementById("scroll-to-top").style.display = "none";
+      document.getElementById("scroll-to-bottom").style.display = "block";
+    }  
+  
 }
 
 // Función para desplazar hacia abajo
 function scrollToBottom() {
   window.scrollTo({
     top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+}
+
+//Funcion para desplazar hacia arriba
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
     behavior: 'smooth'
   });
 }

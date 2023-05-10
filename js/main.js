@@ -113,14 +113,14 @@ function enviarWhatsapp() {
 
 // Funcion para detectar que la pagina ha sido desplazada
 function scrollFunction() {
-    if (window.screen.width <= 1500 || document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("scroll-to-top").style.display = "block";
-      document.getElementById("scroll-to-bottom").style.display = "none"
-    } else {
-      document.getElementById("scroll-to-top").style.display = "none";
-      document.getElementById("scroll-to-bottom").style.display = "block";
-    }  
-  
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll-to-top").style.display = "block";
+    document.getElementById("scroll-to-bottom").style.display = "none"
+  } else {
+    document.getElementById("scroll-to-top").style.display = "none";
+    document.getElementById("scroll-to-bottom").style.display = "block";
+  }
+
 }
 
 // Función para desplazar hacia abajo

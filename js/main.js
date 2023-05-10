@@ -1,11 +1,13 @@
 'use strict'
 
+// scroll suave en la pagina
+
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("abajo", window.scrollY > 0)
 });
 
-
+// Ver CV en PDF
 
 document.getElementById("btn").addEventListener("click", function () {
   var pdfUrl = "https://portfoliobric.000webhostapp.com/documento/CV-Cristopher-Briceno-2023.pdf";
@@ -85,7 +87,7 @@ puntoEdu.forEach((cadaPunto, i) => {
   })
 });
 
-// Marcado de numero de telefono
+// Marcado de numero de telefono ------------------------------------------
 
 const numTel = document.getElementById("numTel");
 
@@ -93,7 +95,7 @@ const numTel = document.getElementById("numTel");
     window.location.href = "tel:+" + numTel.textContent;
   });
 
-  // Envio de correo electronico
+  // Envio de correo electronico ------------------------------------------
 
   const sendEmail = document.getElementById("sendEmail");
 
@@ -101,11 +103,11 @@ const numTel = document.getElementById("numTel");
     window.location.href = "mailto:" + sendEmail.textContent;
   });
 
-  // Enviar whatsapp
+  // Enviar whatsapp ------------------------------------------------------
 
   function enviarWhatsapp() {
-    const telefono = '+50230944978'; // Reemplaza con el número de teléfono del destinatario
-    const mensaje = 'Hola! Te saludo de: '; // Reemplaza con el mensaje que deseas enviar
+    const telefono = '+50230944978'; 
+    const mensaje = 'Hola! Te saludo de: '; 
 
     const enlaceWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     window.open(enlaceWhatsapp);

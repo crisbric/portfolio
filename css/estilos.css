@@ -703,7 +703,6 @@ nav ul li {
 
     #scroll-to-top,
     #scroll-to-bottom {
-        display: none;
         position: fixed;
         bottom: 50px;
         right: 10px;

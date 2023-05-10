@@ -112,3 +112,33 @@ function enviarWhatsapp() {
   const enlaceWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
   window.open(enlaceWhatsapp);
 }
+
+// Funciones para subir o bajar en la pantalla ---------------------------
+
+//Funcion para desplazar hacia arriba
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Funcion para detectar que la pagina ha sido desplazada
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll-to-top").style.display = "block";
+    document.getElementById("scroll-to-bottom").style.display = "none"
+  } else {
+    document.getElementById("scroll-to-top").style.display = "none";
+    document.getElementById("scroll-to-bottom").style.display = "block";
+  }
+}
+
+// Función para desplazar hacia abajo
+function scrollToBottom() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+}

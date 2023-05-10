@@ -507,6 +507,8 @@ nav ul li {
 }
 
 
+
+
 @media only screen and (max-width: 1500px) {
 
     header ul {
@@ -689,12 +691,19 @@ nav ul li {
         background-image: linear-gradient(43deg, rgb(243, 242, 242) 0%, rgb(231 241 247) 100%);
     }
 
-    .data {
-        text-align: left;
-    }
-
-    .data h2 {
-        display: none;
-    }
+    #scroll-to-top, #scroll-to-bottom{
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+        padding: 10px;
+        color: black;
+        font-size: 16px;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+/* 
+      #scroll-to-top span, #scroll-to-bottom span{
+        font-size: x-small;
+      } */
 
 }

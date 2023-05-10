@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
-<body>
+<body onscroll="scrollFunction()">
 
     <div id="particles-js"></div>
 
@@ -19,7 +19,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#home">
+                        <a href="#" onclick="scrollToTop()">
                             Inicio
                         </a>
                     </li>
@@ -301,6 +301,15 @@
                 </article>
             </article>
         </section>
+
+        <!-- <div id="scroll-to-top" onclick="scrollToTop()">
+            <img src="#">
+            <span>Inicio</span>
+        </div> -->
+        <img src="img/ico/up.png" id="scroll-to-top" width="50px" height="50px" onclick="scrollToTop()"></img>
+        <img src="img/ico/down.png" id="scroll-to-bottom" width="50px" height="50px" onclick="scrollToBottom()"></img>
+
+
     </div>
 
     <div class="clearfix"></div>

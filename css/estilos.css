@@ -611,11 +611,11 @@ nav ul li {
     }
 
     .carrousel h2 {
-        font-size: small;
+        font-size: large;
         font-weight: 100;
         width: 100%;
         text-align: center;
-        color: #6a6a6a;
+        color: #000000;
         margin-top: -10px;
         margin-bottom: 10px;
     }

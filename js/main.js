@@ -91,24 +91,24 @@ puntoEdu.forEach((cadaPunto, i) => {
 
 const numTel = document.getElementById("numTel");
 
-  numTel.addEventListener("click", () => {
-    window.location.href = "tel:+" + numTel.textContent;
-  });
+numTel.addEventListener("click", () => {
+  window.location.href = "tel:+" + numTel.textContent;
+});
 
-  // Envio de correo electronico ------------------------------------------
+// Envio de correo electronico ------------------------------------------
 
-  const sendEmail = document.getElementById("sendEmail");
+const sendEmail = document.getElementById("sendEmail");
 
-  sendEmail.addEventListener("click", () => {
-    window.location.href = "mailto:" + sendEmail.textContent;
-  });
+sendEmail.addEventListener("click", () => {
+  window.location.href = "mailto:" + sendEmail.textContent;
+});
 
-  // Enviar whatsapp ------------------------------------------------------
+// Enviar whatsapp ------------------------------------------------------
 
-  function enviarWhatsapp() {
-    const telefono = '+50230944978'; 
-    const mensaje = 'Hola! Te saludo de: '; 
+function enviarWhatsapp() {
+  const telefono = '+50230944978';
+  const mensaje = 'Hola! Te saludo de: ';
 
-    const enlaceWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
-    window.open(enlaceWhatsapp);
-  }
+  const enlaceWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+  window.open(enlaceWhatsapp);
+}

@@ -191,7 +191,7 @@ footer {
     text-align: center;
 }
 
-.cardContainerEdu{
+.cardContainerEdu {
     width: 100%;
     display: flex;
     padding-top: 5px;
@@ -200,7 +200,8 @@ footer {
     text-align: center;
 }
 
-.cardContainerExp h2, .cardContainerEdu h2 {
+.cardContainerExp h2,
+.cardContainerEdu h2 {
     font-size: x-small;
     font-weight: 100;
     text-transform: uppercase;
@@ -474,22 +475,23 @@ nav ul li {
     margin: 50px;
     margin-bottom: 25px;
 }
+
 .habilidad img:hover {
     transform: translateY(-5%);
     transition: all .5s ease;
 }
 
-#numTel:hover{
+#numTel:hover {
     color: blue;
     cursor: pointer;
 }
 
-#sendEmail:hover{
+#sendEmail:hover {
     color: blue;
     cursor: pointer;
 }
 
-.ico img{
+.ico img {
     width: 50px;
     max-height: 50px;
     transition: all 1s ease;
@@ -497,7 +499,7 @@ nav ul li {
     margin: 30px;
 }
 
-.ico img:hover{
+.ico img:hover {
     max-width: 50px;
     max-height: 50px;
     transition: all 1s ease;
@@ -515,7 +517,7 @@ nav ul li {
     }
 
 
-    .data{
+    .data {
         font-size: 25px;
         line-height: 1.5;
     }
@@ -558,7 +560,8 @@ nav ul li {
         font-size: 23px;
     }
 
-    .cardContainerExp, .cardContainerEdu {
+    .cardContainerExp,
+    .cardContainerEdu {
         margin: 50px;
         width: calc(100% - 100px);
         margin-bottom: 0;
@@ -572,8 +575,9 @@ nav ul li {
         display: inline-block;
         overflow: hidden;
     }
-    
-    .cardContainerExp .grandeExp, .cardContainerEdu .grandeEdu {
+
+    .cardContainerExp .grandeExp,
+    .cardContainerEdu .grandeEdu {
         width: 300%;
         display: flex;
         flex-flow: row nowrap;
@@ -584,9 +588,10 @@ nav ul li {
         overflow: hidden;
         transition: all .5s ease;
     }
-    
 
-    .cardContainerExp .grandeExp .card, .cardContainerEdu .grandeEdu .card {
+
+    .cardContainerExp .grandeExp .card,
+    .cardContainerEdu .grandeEdu .card {
         width: calc(100%/3 - 70px);
         margin: 10px 30px 10px 30px;
         background-color: green;
@@ -599,10 +604,11 @@ nav ul li {
         min-height: 20vh;
         max-height: 60vh;
         overflow: scroll;
-        
+
     }
 
-    .cardContainerExp .puntosExp, .cardContainerEdu .puntosEdu {
+    .cardContainerExp .puntosExp,
+    .cardContainerEdu .puntosEdu {
         width: 100%;
         padding: .2em;
         margin: .2em 0 0;
@@ -614,7 +620,8 @@ nav ul li {
         align-items: center;
     }
 
-    .cardContainerExp .puntoExp, .cardContainerEdu .puntoEdu {
+    .cardContainerExp .puntoExp,
+    .cardContainerEdu .puntoEdu {
         width: 2em;
         height: 2em;
         margin: .5em;
@@ -626,12 +633,14 @@ nav ul li {
         padding: 1.5em;
     }
 
-    .cardContainerExp .puntoExp:hover, .cardContainerEdu .puntoEdu:hover {
+    .cardContainerExp .puntoExp:hover,
+    .cardContainerEdu .puntoEdu:hover {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         transition: all 1s ease;
     }
 
-    .cardContainerExp .puntoExp.activo, .cardContainerEdu .puntoEdu.activo {
+    .cardContainerExp .puntoExp.activo,
+    .cardContainerEdu .puntoEdu.activo {
         background-image: linear-gradient(19deg, #0b0858 0%, #0d405b 80%);
     }
 
@@ -656,7 +665,7 @@ nav ul li {
         border-radius: 6px;
         overflow: hidden;
         max-height: 60vh;
-    
+
     }
 
     .article .habilidad {
@@ -680,10 +689,11 @@ nav ul li {
         background-image: linear-gradient(43deg, rgb(243, 242, 242) 0%, rgb(231 241 247) 100%);
     }
 
-    .data{
+    .data {
         text-align: left;
     }
-    .data h2{
+
+    .data h2 {
         display: none;
     }
 

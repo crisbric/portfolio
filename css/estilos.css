@@ -489,6 +489,22 @@ nav ul li {
     cursor: pointer;
 }
 
+.ico img{
+    width: 50px;
+    max-height: 50px;
+    transition: all 1s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.ico img:hover{
+    max-width: 50px;
+    max-height: 50px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+
 @media only screen and (max-width: 1500px) {
 
     header ul {
@@ -662,6 +678,13 @@ nav ul li {
 
     body {
         background-image: linear-gradient(43deg, rgb(243, 242, 242) 0%, rgb(231 241 247) 100%);
+    }
+
+    .data{
+        text-align: left;
+    }
+    .data h2{
+        display: none;
     }
 
 }

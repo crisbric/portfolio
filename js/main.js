@@ -101,42 +101,12 @@ const numTel = document.getElementById("numTel");
     window.location.href = "mailto:" + sendEmail.textContent;
   });
 
-  // Correo por gmail
+  // Enviar whatsapp
 
-  
+  function enviarWhatsapp() {
+    const telefono = '+50230944978'; // Reemplaza con el número de teléfono del destinatario
+    const mensaje = 'Hola! Te saludo de: '; // Reemplaza con el mensaje que deseas enviar
 
-src="https://apis.google.com/js/api.js"
-
-  function enviarCorreo() {
-    gapi.load('auth2', function() {
-      gapi.auth2.init({
-        client_id: 'TU_CLIENT_ID'
-      }).then(function(auth2) {
-        gapi.client.load('gmail', 'v1', function() {
-          const correo = {
-            to: 'destinatario@ejemplo.com',
-            subject: 'Asunto del correo electrónico',
-            message: 'Contenido del correo electrónico'
-          };
-
-          const base64EncodedEmail = btoa(
-            'Content-Type: text/plain; charset=utf-8\r\n' +
-            'To: ' + correo.to + '\r\n' +
-            'Subject: ' + correo.subject + '\r\n\r\n' +
-            correo.message
-          ).replace(/\+/g, '-').replace(/\//g, '_');
-
-          const request = gapi.client.gmail.users.messages.send({
-            'userId': 'me',
-            'resource': {
-              'raw': base64EncodedEmail
-            }
-          });
-
-          request.execute(function(response) {
-            console.log(response);
-          });
-        });
-      });
-    });
+    const enlaceWhatsapp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.open(enlaceWhatsapp);
   }

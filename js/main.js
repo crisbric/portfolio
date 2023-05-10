@@ -10,7 +10,7 @@ window.addEventListener("scroll", function () {
 // Ver CV en PDF
 
 document.getElementById("btn").addEventListener("click", function () {
-  var pdfUrl = "https://portfoliobric.000webhostapp.com/documento/CV-Cristopher-Briceno-2023.pdf";
+  var pdfUrl = "https://github.com/crisbric/portfolio/documento/CV-Cristopher-Briceno-2023.pdf";
   window.open(pdfUrl, "_blank");
 });
 

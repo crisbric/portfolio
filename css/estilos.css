@@ -506,15 +506,6 @@ nav ul li {
 
 #scroll-to-top,
 #scroll-to-bottom {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 10px;
-    padding: 10px;
-    color: black;
-    font-size: 16px;
-    border-radius: 50px;
-    cursor: pointer;
     width: 1px;
     height: 1px;
 }

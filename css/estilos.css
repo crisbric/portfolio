@@ -402,7 +402,7 @@ footer {
 
 .carrousel .img:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(19deg, #b921ff49 0%, #b0e4ff 80%);
+    background-image: linear-gradient(19deg, #0b0858 0%, #0d405b 80%);
     transition: all 1s ease;
 }
 

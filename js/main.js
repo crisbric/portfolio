@@ -86,12 +86,6 @@ const swiperExp = new Swiper(".swiperMasterExp", {
   loop: true,
   // effect: "cards",
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
-
   breakpoints: {
     620: {
       slidesPerView: 1,
@@ -140,12 +134,6 @@ const swiperEdu = new Swiper(".swiperMasterEdu", {
   direction: "horizontal",
   loop: true,
   // effect: "cards",
-
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
 
   // effect: "flip",
   // flipEffect: {

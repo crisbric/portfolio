@@ -92,7 +92,7 @@
   }
 
   .menu a {
-    color: var(--text-color-inverse);
+    color: white;
     line-height: 60px;
   }
 

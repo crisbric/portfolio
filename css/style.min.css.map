@@ -1,8 +1,0 @@
-{
-    "version": 3,
-    "sources": [
-        "style.css"
-    ],
-    "names": [],
-    "mappings": "AAAA,qBACI,SAAU,SACV,OAAQ,MACR,SAAU,KAGd,wBACA,QAAS,MAGT,OACI,MAAM,KACN,YAAY,cAOhB,cACI,iBAAkB,QAGtB,GAAQ,KAAJ,GACA,UAAW,eACX,YAAa,cAGjB,GACI,UAAW,eACX,YAAa,IAGjB,MACI,UAAW,eAIf,UACI,MAAO,KACP,iBAAkB,kBAGtB,YACI,iBAAkB,QAGtB,aACI,iBAAkB,QAGtB,mBACI,iBAAkB"
-}

@@ -1,347 +1,404 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
-    <title>Portfolio Cristopher Briceño</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 2.0</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/estilos.css" />
-</head>
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
 
-<body onscroll="scrollFunction()">
-
+  <body class="gridContainer" onscroll="scrollFunction()">
     <div id="particles-js"></div>
 
-    <div id="container">
+    <header class="header">
+      <video id="videoDesktop" class="videoCover" autoplay loop muted>
+        <source src="img/about/cover.mp4" type="video/mp4" />
+      </video>
+      <video id="videoMobile" class="videoCover" autoplay loop muted>
+        <source src="img/about/coverPhone.mp4" type="video/mp4" />
+      </video>
+    </header>
 
-        <!-- Barra de navegacion -->
-
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" onclick="scrollToTop()">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#aboutme">
-                            Sobre mí
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#proyecto">
-                            Proyectos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#explab">
-                            Experiencia Laboral
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#edu">
-                            Educación
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skills">
-                            Habilidades
-                        </a>
-                    </li>
-                    <li style="float:right">
-                        <a href="#contact">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Inicio -->
-
-        <section>
-            <article id="home" class="article">
-                <h2 id="welcome">¡Hola! 👋</h2>
-                <h2 id="name">Mi nombre es Cristopher Briceño</h2>
-                <p>y me apasiona la tecnologia y sus aplicaciones en la vida real.</p>
-                <br><br>
-                <button id="btn">Ver CV en PDF</button>
-            </article>
-        </section>
-
-        <!-- Acerca de mi -->
-
-        <section>
-            <article id="aboutme" class="article">
-
-                <hr><br>
-                <h2>Sobre mi</h2>
-
-                <div class="sobreMi">
-                    <div class="cardAbout">
-                        <p>
-                            Siempre me ha interesado la programación y todo lo que se puede lograr con ella, me gusta
-                            aprender cada dia un poco mas al respecto y ponerlo en
-                            practica en pequeños proyectos a los que le doy uso propio. La disciplina, perseverancia y
-                            la curiosidad son algunas de las cosas que
-                            me definen y que aplico en cada cosa que hago, sea profesional, educativa o personal. Me
-                            encantan los idiomas y hasta ahora me puedo comunicar
-                            fluidamente en español, que es mi idioma nativo, e ingles como segundo idioma, ademas de que
-                            recibo algunos cursos de frances.
-                        </p><br>
-                        <img src="img/about/espana.png">
-                        <img src="img/about/ingles.png">
-                        <img src="img/about/frances.png">
-                        <br><br>
-                        <p>
-                            He terminado de cursar la carrera de Ingeniería en Sistemas de Información y Ciencias de la
-                            Computación,
-                            y actualmente sigo estudiando algunos cursos de programación Web en plataformas de cursos
-                            virtuales como Udemy.
-                        </p>
-                        <img class="udemy" src="img/about/udemy.png">
-                    </div>
-
-                    <img class="img-about" id="profile" src="img/about/propic-removebg-preview.png" />
-
-                </div>
-
-
-            </article>
-        </section>
-
-        <!-- Carrousel para proyectos -->
-
-        <section>
-            <article id="proyecto" class="article">
-                <hr><br>
-                <h2>Proyectos</h2>
-                <div class="carrousel">
-                    <h2 class="clickh2">¡Dale click al proyecto para verlo!</h2>
-                    <div class="grande">
-                        <a class="imglink" href="https://github.com/crisbric/portfolio.git" target="_blank">
-                            <img class="img" src="img/proyectos/portfoliodigital.png">
-                        </a>
-                        <video autoplay loop muted>
-                            <source src="img/proyectos/soonvideo.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <ul class="puntos">
-                        <li class="punto activo"></li>
-                        <li class="punto"></li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-        <!-- Experiencia Laboral -->
-
-        <section>
-            <hr>
-            <h2 id="explab" class="article">Experiencia Laboral</h2>
-
-            <div class="cardContainerExp">
-                <div class="grandeExp">
-                    <div class="card">
-                        <figure>
-                            <img class="img-2" src="img/laboral/conduent.png" />
-                        </figure>
-                        <h2>2020 - Actualidad</h2>
-                        <div class="cardContenido">
-                            <h3>Production Controller</h3> <br>
-                            <p>Mis tares incluyen el monitoreo del sistema de produccion y de los servidores para
-                                transmision de archivos,
-                                generar informes detallados en Excel, hacer consultas en SQL Server, crear tickets y
-                                administrar los permisos de acceso de
-                                usuarios de acuerdo a solicitud, entre otras cosas
-                            </p>
-                        </div>
-                        <div class="cardIcons">
-                            <img class="img-2" src="img/laboral/outlook.jpg" />
-                            <img class="img-2" src="img/laboral/teams.jpg" />
-                            <img class="img-2" src="img/laboral/onedrive.png" />
-                            <img class="img-2" src="img/laboral/sql.png" />
-                            <img class="img-2" src="img/laboral/excel.jpg" />
-                            <img class="img-2" src="img/laboral/remodesk.png" />
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <figure>
-                            <img class="img-2" src="img/laboral/intouch.png" />
-                        </figure>
-                        <h2>2018 - 2020</h2>
-                        <div class="cardContenido">
-                            <h3>Agente de Respuesta Critica</h3> <br>
-                            <p>
-                                Era responsable de tomar reportes de emergencias de los usuarios de una plataforma
-                                de viajes, utilizando Zendesk tickets y recepcion de llamadasa en inglés y español. En
-                                situaciones
-                                aplicables, realizaba compensaciones y reembolsos enfocados a la satisfaccion del
-                                cliente,
-                                asi como desactivacion y reactivacion de
-                                cuentas por motivos de seguridad.
-                            </p>
-                        </div>
-                        <div class="cardIcons">
-                            <img class="img-2" src="img/laboral/superpunch.png" />
-                            <img class="img-2" src="img/laboral/slack.jpg" />
-                            <img class="img-2" src="img/laboral/zendesk.png" />
-                            <img class="img-2" src="img/laboral/twilio.png" />
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <figure>
-                            <img class="img-2" src="img/laboral/allied.png" />
-                        </figure>
-                        <h2>2016 - 2018</h2>
-                        <div class="cardContenido">
-                            <h3>Agente de Soporte Tecnico</h3> <br>
-                            <p>
-                                Recibia llamadas de usuarios de la red telefonica con inconvenientes para utilizar el
-                                servicio para luego
-                                identificar y resolver el problema, en ocasiones llamaba a los proveedores de torres
-                                para
-                                trabajar en conjunto. Otra de mis tareas era la
-                                de recargar planes de servicio y vender telefonos, enviar repuestos y hacer tracking de
-                                paquetes.
-                            </p>
-                        </div>
-                        <div class="cardIcons">
-                            <img class="img-2" src="img/laboral/avaya.png" />
-                            <img class="img-2" src="img/laboral/tracfone.png" />
-                        </div>
-                    </div>
-                </div>
-                <ul class="puntosExp">
-                    <li class="puntoExp activo"></li>
-                    <li class="puntoExp"></li>
-                    <li class="puntoExp"></li>
-                </ul>
-            </div>
-
-        </section>
-
-        <!-- Educacion -->
-
-        <section>
-            <article id="edu" class="article">
-                <hr><br>
-                <h2>Educación</h2>
-                <div class="cardContainerEdu">
-                    <div class="grandeEdu">
-                        <div class="card">
-                            <figure>
-                                <img class="img-3" src="img/edu/umg.png">
-                            </figure>
-                            <h2>2017 - 2022</h2>
-                            <div class="cardContenido">
-                                <hr><br>
-                                <h3>Ingeniería en Sistemas de Información y Ciencias de la Computación</h3><br>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <figure>
-                                <img class="img-3" src="img/edu/imbpc.png">
-                            </figure>
-                            <h2>2015 - 2016</h2>
-                            <div class="cardContenido">
-                                <hr><br>
-                                <h3>Bachiller en Computación con Orientación Comercial</h3><br>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <figure>
-                                <img class="img-3" src="img/edu/fmora.png">
-                            </figure>
-                            <h2>2012 - 2014</h2>
-                            <div class="cardContenido">
-                                <hr><br>
-                                <h3>Educación Básica</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="puntosEdu">
-                        <li class="puntoEdu activo"></li>
-                        <li class="puntoEdu"></li>
-                        <li class="puntoEdu"></li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-
-        <!-- Habilidades -->
-
-        <section>
-            <article id="skills" class="article">
-                <hr><br>
-                <h2>Habilidades</h2>
-                <div class="habilidad">
-                    <img src="img/skills/html.png" class="img">
-                    <img src="img/skills/css.png" class="img">
-                    <img src="img/skills/js.png" class="img">
-                    <img src="img/skills/visualcode.png" class="img">
-                    <img src="img/skills/androidstudio.png" class="img">
-                    <img src="img/skills/git.png" class="img">
-                    <img src="img/skills/sql1-removebg-preview.png" class="img">
-                    <img src="img/skills/excel.png" class="img">
-                    <img src="img/skills/outlook.png" class="img">
-                    <img src="img/skills/remote.png" class="img">
-                </div>
-
-                <article class="article">
-                    <h2>Habilidades Blandas</h2>
-                    <div class="habilidad">
-                        <img src="img/skills/atencion.png" class="img">
-                        <img src="img/skills/teamwork.png" class="img">
-                    </div>
-                </article>
-            </article>
-        </section>
-
-        <!-- <div id="scroll-to-top" onclick="scrollToTop()">
-            <img src="#">
-            <span>Inicio</span>
-        </div> -->
-
-        <img src="img/ico/up.png" id="scroll-to-top" onclick="scrollToTop()"></img>
-        <img src="img/ico/down.png" id="scroll-to-bottom" onclick="scrollToBottom()"></img>
-
-
+    <div class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="img/about/propic-removebg-preview.png"
+            alt="programador"
+            loading="lazy"
+          />
+          <div class="logotype">CRISTOPHER BRICEÑO</div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img
+            src="img/ico/hamburguer-icon.png"
+            alt="abrir menú"
+            width="40px"
+          />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/ico/close-icon.png" alt="cerrar menú" width="40px" />
+          </button>
+          <li><a href="#aboutMe">Acerca de mi</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#experience">Experiencia Laboral</a></li>
+          <li><a href="#education">Educacion</a></li>
+          <li><a href="#skill">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="clearfix"></div>
+    <aside id="contact" class="sidebar">
+      <div class="contact">
+        Contacto
+        <div class="ico">
+          <img
+            class="icono"
+            onclick="enviarWhatsapp()"
+            src="img/ico/whatsapp.png"
+            width="45px"
+            height="45px"
+          />
+          <img
+            class="icono"
+            onclick="enviarCorreo()"
+            src="img/ico/gmail.png"
+            width="45px"
+            height="45px"
+          />
+          <img
+            class="icono"
+            onclick="llamar()"
+            src="img/ico/call.png"
+            width="45px"
+            height="45px"
+          />
+        </div>
+      </div>
+    </aside>
 
-    <!-- Contacto -->
+    <article class="main">
+      <div class="inicioContainer">
+        <div id="profile" class="home">Bienvenido</div>
+        <div class="inicio">
+          <h2 id="welcome">¡Hola! 👋</h2>
+          <h2 id="name">Mi nombre es Cristopher Briceño</h2>
+          <p class="p">
+            y me apasiona la tecnologia y sus aplicaciones en la vida real.
+          </p>
+          <br /><br />
+          <button id="btn">Descargar CV</button>
+        </div>
+      </div>
 
-    <section id="sectionContact">
-        <article id="contact" class="data">
-            <h2>CONTACTO</h2>
-            <div class="ico">
-                <img class="icono" onclick="enviarWhatsapp()" src="img/ico/whatsapp.png" width="45px" height="45px">
-                <img class="icono" onclick="enviarCorreo()" src="img/ico/gmail.png" width="45px" height="45px">
-                <img class="icono" onclick="llamar()" src="img/ico/call.png" width="45px" height="45px">
+      <div id="aboutMe" class="aboutme">
+        <div class="about">Sobre Mi</div>
+        <div class="cardAbout">
+          <p>
+            Siempre me ha interesado la programación y todo lo que se puede
+            lograr con ella, me gusta aprender cada dia un poco mas al respecto
+            y ponerlo en practica en pequeños proyectos a los que le doy uso
+            propio. La disciplina, perseverancia y la curiosidad son algunas de
+            las cosas que me definen y que aplico en cada cosa que hago, sea
+            profesional, educativa o personal. Me encantan los idiomas y hasta
+            ahora me puedo comunicar fluidamente en español, que es mi idioma
+            nativo, e ingles como segundo idioma, ademas de que recibo algunos
+            cursos de frances.
+          </p>
+
+          <div class="imgAbout">
+            <img src="img/about/espana.png" />
+            <img src="img/about/ingles.png" />
+            <img src="img/about/frances.png" />
+          </div>
+
+          <p>
+            He terminado de cursar la carrera de Ingeniería en Sistemas de
+            Información y Ciencias de la Computación, y actualmente sigo
+            estudiando algunos cursos de programación Web en plataformas de
+            cursos virtuales como Udemy.
+          </p>
+
+          <img class="udemy" src="img/about/udemy.png" />
+        </div>
+
+        <img class="img-about" src="img/about/propic-removebg-preview.png" />
+      </div>
+
+      <div id="projects" class="proyectosContainer">
+        <div class="proyectos">Proyectos</div>
+        <div class="swiperProyectos">
+          <div class="swiper swiperMaster">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a
+                  class="imglink"
+                  href="https://github.com/crisbric/portfolio.git"
+                  target="_blank"
+                >
+                  <img class="img" src="img/proyectos/portfoliodigital.png" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <video width="100%" height="100%" autoplay loop muted>
+                  <source src="img/proyectos/soonvideo.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <p class="pProyecto">
+          En este espacio puedes encontrar los proyectos que he realizado, ¡solo
+          dale click para visitar el repositorio!
+        </p>
+      </div>
+
+      <!-- Experiencia Laboral -->
+      <div id="experience" class="expLaboral">
+        <div class="exp">Experiencia Laboral</div>
+        <div class="swiperExperience">
+          <div class="swiper swiperMasterExp">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/laboral/conduent.png " alt="" />
+                <div class="cardDescripcion">
+                  <div class="cardTitulo">
+                    <h4>Controlador de Produccion</h4>
+                  </div>
+                  <div class="cardText">
+                    <p>
+                      Mis tareas incluyen el monitoreo del sistema de produccion
+                      y de los servidores para transmision de archivos, generar
+                      informes detallados en Excel, hacer consultas en SQL
+                      Server, crear tickets y administrar los permisos de acceso
+                      de usuarios de acuerdo a solicitud, entre otras cosas.
+                    </p>
+                    <p>
+                      Estas son algunas de las herramientas con las que trabaje:
+                    </p>
+                    <br />
+                  </div>
+                  <div class="cardIcons">
+                    <img class="img-2" src="img/laboral/outlook.jpg" />
+                    <img class="img-2" src="img/laboral/teams.jpg" />
+                    <img class="img-2" src="img/laboral/onedrive.png" />
+                    <img class="img-2" src="img/laboral/sql.png" />
+                    <img class="img-2" src="img/laboral/excel.jpg" />
+                    <img class="img-2" src="img/laboral/remodesk.png" />
+                  </div>
+                  <a href="#"></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="img/laboral/intouch.png "
+                  alt=""
+                  width="100px"
+                  height="50px"
+                  loading="lazy"
+                />
+                <div class="cardDescripcion">
+                  <div class="cardTitulo">
+                    <h4>Agente de Respuesta Critica</h4>
+                  </div>
+                  <div class="cardText">
+                    <p>
+                      Era responsable de tomar reportes de emergencias de los
+                      usuarios de una plataforma de viajes, utilizando Zendesk
+                      tickets y recepcion de llamadasa en inglés y español. En
+                      situaciones aplicables, realizaba compensaciones y
+                      reembolsos enfocados a la satisfaccion del cliente, asi
+                      como desactivacion y reactivacion de cuentas por motivos
+                      de seguridad.
+                    </p>
+                    <p>
+                      Estas son algunas de las herramientas con las que trabaje:
+                    </p>
+                    <br />
+                  </div>
+                  <div class="cardIcons">
+                    <img class="img-2" src="img/laboral/superpunch.png" />
+                    <img class="img-2" src="img/laboral/slack.jpg" />
+                    <img class="img-2" src="img/laboral/zendesk.png" />
+                    <img class="img-2" src="img/laboral/twilio.png" />
+                  </div>
+                  <a href="#"></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="img/laboral/allied.png"
+                  alt=""
+                  width="100px"
+                  height="50px"
+                  loading="lazy"
+                />
+                <div class="cardDescripcion">
+                  <div class="cardTitulo">
+                    <h4>Agente de Soporte Tecnico</h4>
+                  </div>
+                  <div class="cardText">
+                    <p>
+                      Recibia llamadas de usuarios de la red telefonica con
+                      inconvenientes para utilizar el servicio para luego
+                      identificar y resolver el problema, en ocasiones llamaba a
+                      los proveedores de torres para trabajar en conjunto. Otra
+                      de mis tareas era la de recargar planes de servicio y
+                      vender telefonos, enviar repuestos y hacer tracking de
+                      paquetes.
+                    </p>
+                    <p>
+                      Estas son algunas de las herramientas con las que trabaje:
+                    </p>
+                    <br />
+                  </div>
+                  <div class="cardIcons">
+                    <img
+                      class="img-2"
+                      src="img/laboral/avaya.png"
+                      loading="lazy"
+                    />
+                    <img
+                      class="img-2"
+                      src="img/laboral/tracfone.png"
+                      loading="lazy"
+                    />
+                  </div>
+                  <a href="#"></a>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Educacion  -->
+      <div id="education" class="estudios">
+        <div class="edu">Educacion</div>
+        <div class="swiperEducation">
+          <div class="swiper swiperMasterEdu">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="imgEdu" src="img/edu/umg.png" alt="" />
+                <div class="cardDescripcion">
+                  <div class="cardTitulo">
+                    <h4>
+                      Ingeniería en Sistemas de Información y Ciencias de la
+                      Computación
+                    </h4>
+                  </div>
+                  <a href="#"></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img class="imgEdu" src="img/edu/imbpc.png" alt="" />
+                <div class="cardDescripcion">
+                  <div class="cardTitulo">
+                    <h4>Bachiller en Computación con Orientación Comercial</h4>
+                  </div>
+                  <a href="#"></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img class="imgEdu" src="img/edu/fmora.png" alt="" />
+                <div class="cardDescripcion">
+                  <div class="cardTitulo">
+                    <h4>Educacion Basica</h4>
+                  </div>
+                  <a href="#"></a>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skillsContainer">
+        <div id="skill" class="skills">Habilidades</div>
+
+        <div class="habilidad">
+          <img src="img/skills/html.png" class="img" />
+          <img src="img/skills/css.png" class="img" />
+          <img src="img/skills/js.png" class="img" />
+          <img src="img/skills/visualcode.png" class="img" />
+          <img src="img/skills/androidstudio.png" class="img" />
+          <img src="img/skills/git.png" class="img" />
+          <img src="img/skills/sql1-removebg-preview.png" class="img" />
+          <img src="img/skills/excel.png" class="img" />
+          <img src="img/skills/outlook.png" class="img" />
+          <img src="img/skills/remote.png" class="img" />
+        </div>
+
+        <article class="article">
+          <div class="softskills">Habilidades Blandas</div>
+          <div class="habilidad">
+            <img src="img/skills/atencion.png" class="img" />
+            <img src="img/skills/teamwork.png" class="img" />
+          </div>
         </article>
-    </section>
+      </div>
+      <img src="img/ico/up.png" id="scroll-to-top" onclick="scrollToTop()" />
+    </article>
+    <footer class="footer">Portafolio Cristopher Briceño &copy</footer>
 
-    <!-- Llamados a javascript -->
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/anima.min.js"></script>
-
-    <div class="clearfix"></div>
-
-    <!-- Footer -->
-
-    <footer>
-        Portafolio Cristopher Briceño &copy
-    </footer>
-
-</body>
-
+    <!-- <script src="js/particles.min.js"></script> -->
+    <!-- <script src="js/anima.min.js"></script> -->
+  </body>
 </html>

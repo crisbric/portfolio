@@ -106,9 +106,6 @@ a {
 
 #welcome {
   font-size: 3rem;
-  background: linear-gradient(270.16deg, #f09090 -5.65%, #3512b2 107.99%);
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 #name {

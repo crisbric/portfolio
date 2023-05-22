@@ -49,7 +49,7 @@ const swiper = new Swiper(".swiperMaster", {
   loop: true,
   // effect: 'cards',
   autoplay: {
-    delay: 5000,
+    delay: 7000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
